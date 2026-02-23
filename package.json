@@ -1,0 +1,17 @@
+{
+  "name": "postman-to-restassured-action",
+  "version": "1.0.0",
+  "description": "Convert Postman collections to RestAssured test cases",
+  "main": "scripts/convert.js",
+  "scripts": {
+    "convert": "node scripts/convert.js"
+  },
+  "keywords": [
+    "postman",
+    "restassured",
+    "testing",
+    "github-action"
+  ],
+  "author": "cozyloon",
+  "license": "MIT"
+}

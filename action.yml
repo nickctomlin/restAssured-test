@@ -1,0 +1,28 @@
+name: 'Enhanced Postman to RestAssured Converter'
+description: 'Convert Postman collections to RestAssured test cases with optional Allure reporting support.'
+author: 'cozyloon'
+
+branding:
+  icon: 'refresh-cw'
+  color: 'green'
+
+inputs:
+  collection_path:
+    description: 'Path to the Postman collection (.json).'
+    required: true
+  output_directory:
+    description: 'Directory to store generated tests.'
+    required: false
+    default: './generated-tests'
+  enable_allure:
+    description: 'Enable Allure report generation.'
+    required: false
+    default: 'true'
+
+outputs:
+  test_path:
+    description: 'Path to the generated test files.'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
